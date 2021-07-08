@@ -1,0 +1,53 @@
+import java.util.*;
+class Main
+{
+	public static void main(String args[])
+	{
+		System.out.print("enter array size");
+		int i,size,ec,oc,mul;
+		Scanner s=new Scanner(System.in);
+		size=s.nextInt();
+		int a[]=new int[size];
+		System.out.print("enter array elements");
+		for(i=0;i<size;i++)
+		{
+			a[i]=s.nextInt();
+		}
+		int temp,j;
+		for(i=0;i<size;i++)
+		{
+			temp=a[size-1];
+			for(j=size-2;j>=0;j--)
+			{
+				a[j+1]=a[j];
+			}
+			a[0]=temp;
+			
+	
+	for(j=0;j<size;j++)
+	{
+		System.out.print(a[j]);
+	}
+	System.out.println();
+	
+		}
+	
+	}
+}
+
+Output:
+enter array size7
+enter array elements10
+1
+5
+4
+1
+1
+7
+71015411
+17101541
+11710154
+41171015
+54117101
+15411710
+10154117
